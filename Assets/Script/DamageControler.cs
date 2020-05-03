@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class DamageControler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float doDamage;
+    [SerializeField] private HealthControler healthControler;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+        {
+            Damage();
+            Debug.Log("I WAS EATEN!!");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void Damage()
     {
-        
+        healthControler.playerHealth = healthControler.playerHealth - doDamage;
+        healthControler.UpdateHealth();
+        this.gameObject.SetActive(false);
+        Debug.Log("DAMAGED BY 10");
     }
+
 }
