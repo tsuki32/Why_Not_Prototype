@@ -6,7 +6,7 @@ using TMPro;
 
 public class HealthControler : MonoBehaviour
 {
-    public float playerHealth;
+    public float playerHealth = 100;
     [SerializeField] private TextMeshProUGUI healthText;
 
     private void Start()
