@@ -21,9 +21,14 @@ public class CharacterMovement : MonoBehaviour
         rb.velocity = new Vector2(3, rb.velocity.y);
         onGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
-        if (Input.GetMouseButtonDown(0) && onGround)
+    }
+
+    public void Jump()
+    {
+        if(onGround)
         {
             rb.velocity = new Vector2(rb.velocity.x, 3);
         }
+
     }
 }
