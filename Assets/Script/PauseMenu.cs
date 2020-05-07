@@ -8,36 +8,14 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject ControlMenu;
     // Start is called before the first frame update
-    void Start()
+   
+
+    public void RestartLevel()
     {
-
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+        Time.timeScale = 1f;
     }
-
-    // Update is called once per frame
-    // void Update()
-    // public void OnMouseDown()
-    //  {
-
-    //      if (Input.touchCount > 0)
-
-    //        Debug.Log("paused");
-    //    Pause();
-
-    //   if (GameIsPaused)
-    //   {
-    //       Resume();
-    //  }
-    //  else
-    //  {
-    //     Pause();
-    //  }
-    //  }
-
-
-
-    //  if (Input.GetKeyDown(KeyCode.Escape))
-
-
     public void Resume()
     {
         ControlMenu.SetActive(false);
