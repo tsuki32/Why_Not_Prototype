@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class HealthControler : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class HealthControler : MonoBehaviour
         if (playerHealth <= 0)
         {
             Debug.Log("GAME OVER!");
+            SceneManager.LoadScene("TheEnd");
         }
     }
 
