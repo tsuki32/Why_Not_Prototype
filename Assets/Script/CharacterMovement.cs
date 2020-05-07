@@ -18,7 +18,7 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector2(3, rb.velocity.y);
+        rb.velocity = new Vector2(5, rb.velocity.y);
         onGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
     }
@@ -27,7 +27,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if(onGround)
         {
-            rb.velocity = new Vector2(rb.velocity.x, 3);
+            rb.velocity = new Vector2(rb.velocity.x, 8);
         }
 
     }
