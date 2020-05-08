@@ -6,13 +6,9 @@ public class DamageControler : MonoBehaviour
 {
     [SerializeField] private float doDamage = 10;
     [SerializeField] private HealthControler healthControler;
-    private AudioSource Audio;
-    public AudioClip damage;
+  
 
-    private void Start()
-    {
-        Audio = GetComponent<AudioSource>();
-    }
+ 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,7 +26,7 @@ public class DamageControler : MonoBehaviour
         healthControler.UpdateHealth();
         this.gameObject.SetActive(false);
         Debug.Log("DAMAGED BY 10");
-        Audio.PlayOneShot(damage);
+     
     }
 
 }

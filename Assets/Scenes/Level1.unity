@@ -4647,6 +4647,11 @@ PrefabInstance:
       propertyPath: healthControler
       value: 
       objectReference: {fileID: 2022630916}
+    - target: {fileID: 8101128457467584190, guid: a42bfcf58e457064eba64677110c8705,
+        type: 3}
+      propertyPath: damage
+      value: 
+      objectReference: {fileID: 8300000, guid: 15496729f39253041bcd906255caf049, type: 3}
     - target: {fileID: 8101128457467584191, guid: a42bfcf58e457064eba64677110c8705,
         type: 3}
       propertyPath: m_Simulated
@@ -4667,5 +4672,6 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8101128457467584190, guid: a42bfcf58e457064eba64677110c8705, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a42bfcf58e457064eba64677110c8705, type: 3}
