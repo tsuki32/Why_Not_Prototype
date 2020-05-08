@@ -3807,6 +3807,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  jump: {fileID: 8300000, guid: 53950da75952ac946981d73891cf34f2, type: 3}
 --- !u!82 &1709938300
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3919,6 +3920,7 @@ MonoBehaviour:
   FirePoint: {fileID: 2072139109}
   bulletPrefab: {fileID: 9076925666944923959, guid: e969e5d4e2646354bbffa7a8bc4d0d61,
     type: 3}
+  fire: {fileID: 8300000, guid: c65612a02ddbd1542b173f5a221d4692, type: 3}
 --- !u!1 &1712786857
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,10 +9,14 @@ public class CharacterMovement : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask whatIsGround;
     private bool onGround;
+    public AudioClip jump;
+    private AudioSource Audio;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +32,7 @@ public class CharacterMovement : MonoBehaviour
         if(onGround)
         {
             rb.velocity = new Vector2(rb.velocity.x, 8);
+            Audio.PlayOneShot(jump);
         }
 
     }
