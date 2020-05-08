@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D rb;
+    public GameObject impactEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,12 @@ public class Bullet : MonoBehaviour
             Destroy(Collider.transform.gameObject);
             Debug.Log("ENEMY WAS DETECTED");
 
+            Instantiate(impactEffect, transform.position, transform.rotation);
+
         }
+
+        
+
     }
 
 
