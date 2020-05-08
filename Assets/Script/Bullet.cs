@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
 
         }
 
-        
+        Destroy(GameObject.FindWithTag("Bullet"), 5);
 
     }
 
