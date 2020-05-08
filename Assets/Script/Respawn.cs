@@ -12,4 +12,5 @@ public class Respawn : MonoBehaviour
     {
         Player.transform.position = respawnPoint.transform.position;
     }
+ 
 }
