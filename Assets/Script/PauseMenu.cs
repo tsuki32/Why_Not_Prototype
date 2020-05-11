@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    [Header("Pause Menu Settings")]
+
+    [Tooltip("When game is not paused this will be false therefor the deafult will always be false, if game is paused it should set to true")]
     public static bool GameIsPaused = false;
-    public GameObject ControlMenu;
+
+    [Tooltip("Add the options menu")]
+    public GameObject OptionsMenu;
     // Start is called before the first frame update
    
 
@@ -18,7 +23,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Resume()
     {
-        ControlMenu.SetActive(false);
+        OptionsMenu.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
 
@@ -27,7 +32,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
-        ControlMenu.SetActive(true);
+        OptionsMenu.SetActive(true);
         Time.timeScale = 0F;
         GameIsPaused = true;
     }

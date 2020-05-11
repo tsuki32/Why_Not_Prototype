@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class DamageControler : MonoBehaviour
 {
-    [SerializeField] private float doDamage = 10;
+    [Header("Damage delt by enemy")]
+
+    [Tooltip("Define the damage you want to deal to the player")]
+    [SerializeField] public float doDamage = 10;
+
+    [Header("The players health script")]
     [SerializeField] private HealthControler healthControler;
   
 

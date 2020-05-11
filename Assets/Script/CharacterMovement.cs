@@ -4,13 +4,26 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    [Header("Ground Check Settings")]
+
+    [Tooltip("Add the empty gameobject that is groundcheck")]
     public Transform groundCheck;
+
+    [Tooltip("Define the radius for ground check")]
     public float groundCheckRadius;
+
+    [Tooltip("Add layer mask to ground")]
     public LayerMask whatIsGround;
     private bool onGround;
+
+    [Header("The player")]
+    [Tooltip("The players rigidbody2D")]
+    public Rigidbody2D rb;
+
+    [Header("Add audio for jumping")]
     public AudioClip jump;
     private AudioSource Audio;
+
 
     // Start is called before the first frame update
     void Start()

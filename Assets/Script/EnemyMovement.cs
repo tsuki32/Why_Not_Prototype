@@ -8,7 +8,13 @@ public class EnemyMovement : MonoBehaviour
     
     private Vector3 pos1;
     private Vector3 pos2;
+
+    [Header("Enemy movement")]
+
+    [Tooltip("Define what direction and how far you want the enemy to move")]
     public Vector3 posDiff = new Vector3(0f, 0f, 20f);
+
+    [Tooltip("Rate the speed you want the enemy to move at")]
     public float speed = 1.0f;
 
     void Start()

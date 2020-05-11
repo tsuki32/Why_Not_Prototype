@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
+    [Header("Respawn settings")]
+
+    [Tooltip("Add the player")]
     [SerializeField] private Transform Player;
+
+    [Tooltip("Add the position you want to respawn too, defined with an empty gameobject")]
     [SerializeField] private Transform respawnPoint;
 
 

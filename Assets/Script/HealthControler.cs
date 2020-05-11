@@ -7,7 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class HealthControler : MonoBehaviour
 {
+    [Header("Players health")]
+    [Tooltip("Define what you want your players health to be")]
     public float playerHealth = 100;
+
     [SerializeField] private TextMeshProUGUI healthText;
    
 

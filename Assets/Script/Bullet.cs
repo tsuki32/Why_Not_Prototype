@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    [Header("Bullet Settings")]
+
+    [Tooltip("Define the speed of the bullet prefab")]
     public float speed = 20f;
+
+    [Tooltip("Add bullets rigidbody2D")]
     public Rigidbody2D rb;
+
+    [Header("Effect for bullet impact")]
+    [Tooltip("Spawns an effect on impact of enemy")]
     public GameObject impactEffect;
     
 

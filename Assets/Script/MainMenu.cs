@@ -6,7 +6,8 @@ using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
-
+    [Header("Audio mixer in the scene is added here")]
+    [Tooltip("This enable the UI slider to edit the sound that comes threw the audio mixer")]
     public AudioMixer audioMixer;
     
 
