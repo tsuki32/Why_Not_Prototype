@@ -28,16 +28,20 @@ public class Bullet : MonoBehaviour
     {
         if (Collider.gameObject.tag == "Enemy")
         {
+            
             Destroy(Collider.transform.gameObject);
             Debug.Log("ENEMY WAS DETECTED");
 
             Instantiate(impactEffect, transform.position, transform.rotation);
-            
+
         }
 
-        Destroy(GameObject.FindWithTag("Bullet"), 5);
+         
+      
 
     }
+
+    
 
 
 }

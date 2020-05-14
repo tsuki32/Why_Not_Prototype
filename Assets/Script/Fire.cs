@@ -22,11 +22,24 @@ public class Fire : MonoBehaviour
         Audio = GetComponent<AudioSource>();
     }
 
+    private void Update()
+    {
+        Destroy(GameObject.FindWithTag("Bullet"), 0.5F);
+    }
+
     public void FireBullet()
     {
         
         Audio.PlayOneShot(fire);
         Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
+        Destroy(GameObject.FindWithTag("Bullet"), 0.5F);
+
+    }
+
+    void DestroyBullet()
+    {
+        Destroy(GameObject.FindWithTag("Bullet"), 0.5F);
+        Debug.Log("WE DID IT");
     }
 
 

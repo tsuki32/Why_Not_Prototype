@@ -10,7 +10,7 @@ public class DamageControler : MonoBehaviour
     [SerializeField] public float doDamage = 10;
 
     [Header("The players health script")]
-    [SerializeField] private HealthControler healthControler;
+    [SerializeField] public HealthControler healthControler;
   
 
  
